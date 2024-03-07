@@ -1,0 +1,8 @@
+django
+djangorestframework
+markdown
+django-filter
+elasticsearch
+elasticsearch-dsl
+django-elasticsearch-dsl
+python-dotenv
