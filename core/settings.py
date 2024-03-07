@@ -13,6 +13,7 @@ from os import getenv
 from pathlib import Path
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -135,7 +136,7 @@ REST_FRAMEWORK = {
 
 ELASTICSEARCH_DSL = {
     "default": {
-        "hosts": "https://localhost:9200",
+        "hosts": getenv('ES_HOST'),
         'http_auth': (getenv('ES_USER'), getenv('ES_PASSWORD')),
         'verify_certs': False,
     }
