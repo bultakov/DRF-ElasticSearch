@@ -17,7 +17,7 @@ python manage.py shell
 ```
 
 ```python3
-from product.documents import ProductDocument
+from search.documents import ProductDocument
 
 products = ProductDocument.search().query('match', name='mahsulot')
 for product in products:

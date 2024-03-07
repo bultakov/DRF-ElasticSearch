@@ -5,7 +5,7 @@ from elasticsearch_dsl import Q
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.views import APIView
 
-from product.documents import ProductDocument
+from .documents import ProductDocument
 from product.serializers import ProductSerializer
 
 
